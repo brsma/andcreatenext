@@ -6,26 +6,28 @@
 
 
 // Our variables
-$base-font-family: 'MaisonNeue-Regular', 'Helvetica Neue', 'Helvetica', 'Nimbus Sans', sans-serif;
+$base-font-family: 'Avenir Next', 'Avenir', 'Helvetica Neue', 'Helvetica', 'Nimbus Sans', sans-serif;
 $base-font-size:   3vw;
+$base-font-size-largescreen: 24pt;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
-$spacing-unit:     30px;
+$spacing-unit:     5vw;
 
-$text-color:       #111;
+$text-color:       #222;
 $background-color: #fdfdfd;
 $brand-color:      #2a7ae2;
 
 $grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$grey-color-light: lighten($grey-color, 35%);
+$grey-color-dark:  darken($grey-color, 35%);
 
 // Width of the content area
 $content-width:    40em;
 
-$on-palm:          768px;
-$on-laptop:        1024px;
+$medium-screen-width: 768px;
+$large-screen-width:  1024px;
+$xlarge-screen-width: 1440px;
 
 
 

@@ -21,6 +21,11 @@ body {
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
+
+    @include media-query($large-screen) {
+      font-size: $base-font-size-largescreen;
+    }
+
 }
 
 
@@ -80,7 +85,7 @@ li {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 500;
+    font-weight: 600;
 }
 
 
@@ -93,7 +98,7 @@ a {
     text-decoration: none;
 
     &:visited {
-        color: darken($brand-color, 15%);
+        // color: darken($brand-color, 15%);
     }
 
     &:hover {
@@ -112,7 +117,7 @@ blockquote {
     border-left: 4px solid $grey-color-light;
     padding-left: $spacing-unit / 2;
     font-size: $base-font-size * 1.333;
-    letter-spacing: -1px;
+    letter-spacing: -0.05em;
     font-style: italic;
 
     > :last-child {
@@ -162,7 +167,7 @@ pre {
     padding-left: $spacing-unit;
     @extend %clearfix;
 
-    @include media-query($on-laptop) {
+    @include media-query($large-screen-width) {
         max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
         max-width:         calc(#{$content-width} - (#{$spacing-unit}));
         padding-right: $spacing-unit / 2;
