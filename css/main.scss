@@ -32,7 +32,7 @@ $xlarge-screen-width: 1440px;
 
 
 // Using media queries with like this:
-// @include media-query($on-palm) {
+// @include media-query($medium-screen.width) {
 //     .wrapper {
 //         padding-right: $spacing-unit / 2;
 //         padding-left: $spacing-unit / 2;

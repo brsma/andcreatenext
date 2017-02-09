@@ -22,7 +22,7 @@ body {
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
 
-    @include media-query($large-screen) {
+    @include media-query($large-screen-width) {
       font-size: $base-font-size-largescreen;
     }
 
