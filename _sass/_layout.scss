@@ -41,7 +41,7 @@
         }
     }
 
-    @include media-query($small-screen) {
+    @include media-query($medium-screen-width) {
         position: absolute;
         top: 9px;
         right: 30px;
@@ -134,7 +134,7 @@
     width:         calc(45% - (#{$spacing-unit} / 2));
 }
 
-@include media-query($on-laptop) {
+@include media-query($large-screen-width) {
     .footer-col-1,
     .footer-col-2 {
         width: -webkit-calc(50% - (#{$spacing-unit} / 2));
@@ -147,7 +147,7 @@
     }
 }
 
-@include media-query($small-screen-width) {
+@include media-query($medium-screen-width) {
     .footer-col {
         float: none;
         width: -webkit-calc(100% - (#{$spacing-unit} / 2));
